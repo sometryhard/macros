@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+    background-color: #0a0a2a;
+    color: #e0e0e0;
+    font-family: 'Courier New', monospace;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ff6b6b;
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0 0 5px #ff6b6b;
+}
+
+small {
+    display: block;
+    text-align: center;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 1px solid #ff6b6b;
+    margin: 20px 0;
+}
+
+span {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #1a1a3a;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+    padding: 5px 15px;
+    margin: 5px 0;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background-color: #ff6b6b;
+    color: #0a0a2a;
+    box-shadow: 0 0 5px #ff6b6b;
+}
+
+a {
+    color: #ff6b6b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+br + span {
+    display: inline-block;
+    margin-top: 5px;
+}
+        </style>
+    </head>
+    <body>
+        <h1>Welcome to SomeTryhard's macros library!</h1>
+        <small><i>P.S. All files are GDR2, means you need Eclipse to load them</i></small>
+        <hr>
+        <span>Amethyst - </span>
+        <button onclick="downloadFile('mcs/Amethyst.gdr2')">Install</button>
+        <br>
+        <span>Ashley Wave Trials - </span>
+        <button onclick="downloadFile('mcs/Ashley Wave Trials.gdr2')">Install</button>
+        <br>
+        <span>Bloodbath - </span>
+        <button onclick="downloadFile('mcs/Bloodbath.gdr2')">Install</button>
+        <br>
+        <span>ICE Carbon Diablo X - </span>
+        <button onclick="downloadFile('mcs/ICE Carbon Diablo X.gdr2')">Install</button>
+        <br>
+        <span>Sakupen Circles (by diamond) - </span>
+        <button onclick="downloadFile('mcs/New Sakupen Circles.gdr2')">Install</button>
+        <br>
+        <span>Phobos - </span>
+        <button onclick="downloadFile('mcs/Phobos.gdr2')">Install</button>
+        <br>
+        <span>Red World - </span>
+        <button onclick="downloadFile('mcs/Red World.gdr2')">Install</button>
+        <br>
+        <span>Sakupen Hell - </span>
+        <button onclick="downloadFile('mcs/Sakupen Hell.gdr2')">Install</button>
+        <br>
+        <span>Silent Clubstep - </span>
+        <button onclick="downloadFile('mcs/Silent Clubstep.gdr2')">Install</button>
+        <br>
+        <span>Slaughterhouse - </span>
+        <button onclick="downloadFile('mcs/Slaughterhouse.gdr2')">Install</button>
+        <br>
+        <span>Sonic Wave - </span>
+        <button onclick="downloadFile('mcs/Sonic Wave.gdr2')">Install</button>
+        <br>
+        <span>The Golden - </span>
+        <button onclick="downloadFile('mcs/The Golden.gdr2')">Install</button>
+        <br>
+        <span>Tidal Wave - </span>
+        <button onclick="downloadFile('mcs/Tidal Wave.gdr2')">Install</button>
+        <br>
+        <br>
+        <span>If you need a macro that isn't here, </span>
+        <a href="mailto:sometryhard@outlook.com?subject=Macro%20Request&body=Hi%2C%20I%20want%20to%20request%20a%20macro%20for%20">contact me.</a>
+        <script>
+            function downloadFile(url) {
+                 const a = document.createElement('a');
+                  a.href = url;
+                  a.download = url.split('/').pop();
+                  document.body.appendChild(a);
+                  a.click();
+                  document.body.removeChild(a);
+            }
+        </script>
+    </body>
+</html>
